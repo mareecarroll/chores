@@ -2,7 +2,6 @@ import pytest
 from housemate import Housemate
 
 
-@pytest.mark.xfail
 @pytest.mark.parametrize("name, email", [
     ("Bob", "bob@domain.com"),
     ("Mary", "mary@domain.com")
@@ -15,7 +14,6 @@ def test_housemate_init(name, email):
     assert housemate.email == email
 
 
-@pytest.mark.xfail
 @pytest.mark.parametrize("name, email", [
     ("Bob", "bob@domain.com"),
     ("Mary", "mary@domain.com")
