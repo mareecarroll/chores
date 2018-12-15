@@ -2,7 +2,8 @@
 class Chore:
 
     def __init__(self, name, frequency_days):
-        pass
+        self.name = name
+        self.frequency_days = frequency_days
     
     def __repr__(self):
-        pass
+        return f"<Chore(name={self.name}, frequency_days={self.frequency_days})>"
